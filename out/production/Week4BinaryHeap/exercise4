@@ -1,0 +1,13 @@
+# Question 4: Is an array that is sorted in decreasing order a max-oriented heap
+# Answer: Yes
+
+# Question 11: Suppose that your application will have a huge number of insert operations,
+but only a few remove the maximum operations. Which priority-queue implementation
+do you think would be most effective: heap, unordered array, ordered array?
+# Answer: Unordered array as insert costs linear time.
+
+# Question 12: Suppose that your application will have a huge number of find the maximum operations,
+but a relatively small number of insert and remove the maximum operations.
+Which priority queue implementation do you think would be most effective:
+heap, unordered array, ordered array?
+# Answer: Ordered array

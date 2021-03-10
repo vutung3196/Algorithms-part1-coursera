@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Algorithms.iml" filepath="$PROJECT_DIR$/Algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week2StackAndQueue/Week2StackAndQueue.iml" filepath="$PROJECT_DIR$/Week2StackAndQueue/Week2StackAndQueue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week3MergeSort/Week3MergeSort.iml" filepath="$PROJECT_DIR$/Week3MergeSort/Week3MergeSort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week4BinaryHeap/Week4BinaryHeap.iml" filepath="$PROJECT_DIR$/Week4BinaryHeap/Week4BinaryHeap.iml" />
+    </modules>
+  </component>
+</project>
