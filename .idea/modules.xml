@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/Week2StackAndQueue/Week2StackAndQueue.iml" filepath="$PROJECT_DIR$/Week2StackAndQueue/Week2StackAndQueue.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week3MergeSort/Week3MergeSort.iml" filepath="$PROJECT_DIR$/Week3MergeSort/Week3MergeSort.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week4BinaryHeap/Week4BinaryHeap.iml" filepath="$PROJECT_DIR$/Week4BinaryHeap/Week4BinaryHeap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week52-3BalancedSearchTree/Week52-3BalancedSearchTree.iml" filepath="$PROJECT_DIR$/Week52-3BalancedSearchTree/Week52-3BalancedSearchTree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week5BalancedSearchTree/Week5BalancedSearchTree.iml" filepath="$PROJECT_DIR$/Week5BalancedSearchTree/Week5BalancedSearchTree.iml" />
     </modules>
   </component>
 </project>
