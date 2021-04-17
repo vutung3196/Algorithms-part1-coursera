@@ -6,6 +6,28 @@ import edu.princeton.cs.algs4.StdOut;
 
 import java.util.Stack;
 
+/******************************************************************************
+ *  Compilation:  javac Cycle.java
+ *  Execution:    java  Cycle filename.txt
+ *  Dependencies: Graph.java Stack.java In.java StdOut.java
+ *  Data files:   https://algs4.cs.princeton.edu/41graph/tinyG.txt
+ *                https://algs4.cs.princeton.edu/41graph/mediumG.txt
+ *                https://algs4.cs.princeton.edu/41graph/largeG.txt
+ *
+ *  Identifies a cycle.
+ *  Runs in O(E + V) time.
+ *
+ *  % java Cycle tinyG.txt
+ *  3 4 5 3
+ *
+ *  % java Cycle mediumG.txt
+ *  15 0 225 15
+ *
+ *  % java Cycle largeG.txt
+ *  996673 762 840164 4619 785187 194717 996673
+ *
+ ******************************************************************************/
+// time complexity: O(E+V)
 public class Cycle {
     // cycle detection
     // is a given graph acyclic
@@ -34,7 +56,9 @@ public class Cycle {
     }
 
     // ???
-    private void dfs(GraphRepresentation G, int u, int v) {
+    // u: parent vertex
+    // v: child vertex
+    private void dfs(GraphRepresentation G, int parentOfv, int v) {
         marked[v] = true;
         for (int adjacentOfv : G.adjacent(v)) {
             // short circuit if cycle is already found
@@ -45,7 +69,9 @@ public class Cycle {
                 dfs(G, v, adjacentOfv);
             }
 
-            else if (adjacentOfv != u) {
+            // if adjacent of v is not the parent of v and
+            // it has been already visited => there is a cycle
+            else if (adjacentOfv != parentOfv) {
                 cycle = new Stack<>();
                 for (int x = v; x != adjacentOfv; x = edgeTo[x]) {
                     cycle.push(x);
@@ -117,7 +143,7 @@ public class Cycle {
     }
 
     public static void main(String[] args) {
-        In in = new In("D:\\VuTung\\Algorithms\\Algorithms-part1\\src\\com\\undirectedgraph\\tinyG.txt");
+        In in = new In("src/com/undirectedgraph/cycleG.txt");
         GraphRepresentation G = new GraphRepresentation(in);
         Cycle finder = new Cycle(G);
         if (finder.hasCycle()) {
