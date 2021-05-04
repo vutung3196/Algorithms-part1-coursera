@@ -4,8 +4,8 @@ import com.undirectedgraph.GraphRepresentation;
 import edu.princeton.cs.algs4.In;
 
 public class ConnectedComponents {
-    private boolean[] marked;
-    private int[] id;           // id[v] = id of component containing vertex v
+    private final boolean[] marked;
+    private final int[] id;           // id[v] = id of component containing vertex v
     private int count;
 
     public ConnectedComponents(GraphRepresentation graph) {
